@@ -36,30 +36,6 @@
         <script src="../assets/js/libs/uikit.min.js"></script>
         <script src="../assets/js/uikit-components.js"></script>
     
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5JJP7FY91"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-B5JJP7FY91');
-        </script>
-        <script async type="module">
-            import { getCLS, getFCP, getFID, getLCP, getTTFB } from 'https://cdn.jsdelivr.net/npm/web-vitals@2.1.2/dist/web-vitals.js';
-            function sendToGoogleAnalytics({ name, delta, id }) {
-                gtag('event', name, {
-                    event_category: 'Web Vitals',
-                    event_label: id,
-                    value: Math.round(name === 'CLS' ? delta * 1000 : delta),
-                    non_interaction: true,
-                });
-            }
-            /* CLS FCP FID LCP TTFB */
-            getCLS(sendToGoogleAnalytics);
-            getFCP(sendToGoogleAnalytics);
-            getFID(sendToGoogleAnalytics);
-            getLCP(sendToGoogleAnalytics);
-            getTTFB(sendToGoogleAnalytics);
-        </script>
     </head>
     <body class="uni-body">
 
@@ -273,7 +249,7 @@
                                 </ul>
                             </div>
                             <div class="uk-flex-first@m uk-flex-center">
-                                <p class="uk-text-muted">© 2022 Nerko. All rights reserved.</p>
+                                <p class="uk-text-muted">© 2023 YURY. All rights reserved.</p>
                             </div>
                         </div>
                     </div>
@@ -295,19 +271,6 @@
         <script defer src="../assets/js/helpers/typed-helper.js"></script>
         <script defer src="../assets/js/helpers/anime-helper.js"></script>
 
-        <!-- <script defer src="../assets/js/helpers/anime-helper-defined-timelines.js"></script> -->
-        <script>
-            // Schema toggle via URL
-            const queryString = window.location.search;
-            const urlParams = new URLSearchParams(queryString);
-            const getSchema = urlParams.get("schema");
-            if (getSchema === "dark") {
-                document.documentElement.classList.add("uk-dark");
-                localStorage.setItem("darkMode", "1");
-            } else if (getSchema === "light") {
-                document.documentElement.classList.remove("uk-dark");
-                localStorage.setItem("darkMode", "0");
-            }
-        </script>
+
     </body>
 </html>
