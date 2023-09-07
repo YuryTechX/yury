@@ -99,12 +99,12 @@
                         <div class="uk-card uk-card-small">
                             <div class="uk-panel">
                                 <ul class="uk-nav uk-nav-default">
-                                    <li class="uk-nav-header"><a href='/html/nerko/main/landing-01'>Home</a></li>
-                                    <li class="uk-nav-header"><a href='./base.html'>Base components</a></li>
-                                    <li class="uk-nav-header"><a href='./connect-wallet.html'>Connect wallet</a></li>
-                                    <li class="uk-nav-header"><a href='./contact.html'>Contact</a></li>
-                                    <li class="uk-nav-header"><a href='404.html'>404 page</a></li>
-                                    <li class="uk-nav-header">Content &amp; Privacy</li>
+                                    <li class="uk-nav-header"><a href="#">Home</a></li>
+                                    <li class="uk-nav-header"><a href="#uni_about">About Us</a></li>
+                                    <li class="uk-nav-header"><a href="#uni_miniting">Service</a></li>
+                                    <li class="uk-nav-header"><a href="#uni_collection">Our projects</a></li>
+                                    <li class="uk-nav-header"><a href="#uni_team">Team</a></li>
+                                    <li class="uk-nav-header"><a href="#uni_contact">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -114,7 +114,7 @@
         </div>
 
         <!-- Connection mode -->
-        <div id="uni_connect_wallet" class="uk-modal-full" data-uk-modal>
+        <div id="contact_overlay" class="uk-modal-full" data-uk-modal>
             <div class="uk-modal-dialog">
                 <div class="uk-position-top uk-position-z-index-negative" data-uk-height-viewport="">
                     <div class="uk-position-cover uk-background-cover uk-opacity-10 dark:uk-hidden" data-src="./assets/images/gradient-01.png" data-uk-img></div>
@@ -173,7 +173,7 @@
                         <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
                             <div class="uk-navbar-top">
                                 <div class="uk-navbar-left">
-                                    <a class='uk-logo uk-navbar-item uk-h4 uk-h3@m uk-margin-remove' href='/html/nerko/main/landing-01'> <img class="uk-visible dark:uk-hidden" width="120" src="./assets/images/nerko-light.svg" alt="YURY" loading="lazy"> <img class="uk-hidden dark:uk-visible" width="120" src="./assets/images/nerko-dark.svg" alt="YURY" loading="lazy"> </a>
+                                    <a class='uk-logo uk-navbar-item uk-h4 uk-h3@m uk-margin-remove' href='./index.html'>  <img class="uk-hidden dark:uk-visible" width="120" src="./assets/images/yury_white.png" alt="YURY" loading="lazy" style="height: 55px; width: 40px;"> </a>
                                 </div>
 
                                 <div class="uk-navbar-right uk-flex-1 uk-flex-right">
@@ -195,13 +195,13 @@
                                         </ul>
 
                                         <!-- header: call to actions -->
-                                        <a href="#uni_connect_wallet" class="uk-button uk-button-medium@m uk-button-default uk-button-outline uk-margin-left uk-visible@l" data-uk-toggle="">
+                                        <a href="#contact_overlay" class="uk-button uk-button-medium@m uk-button-default uk-button-outline uk-margin-left uk-visible@l" data-uk-toggle="">
                                             <span>Get Quote</span>
                                         </a>
                                     </div>
 
                                     <div class="uk-navbar-item uk-hidden@m">
-                                        <a href="#uni_connect_wallet" class="uk-button uk-button-medium@m uk-button-icon uk-hidden@m uk-margin-small-right" data-uk-toggle="">
+                                        <a href="#contact_overlay" class="uk-button uk-button-medium@m uk-button-icon uk-hidden@m uk-margin-small-right" data-uk-toggle="">
                                             <i class="uk-icon unicon-wallet"></i>
                                         </a>
                                         <a href="#uni_mobile_menu" data-uk-toggle>
@@ -511,6 +511,7 @@
                                                             <div class="uk-grid uk-grid-xsmall uk-grid-small@m" data-uk-grid="">
                                                                 <div>
                                                                     <a href="http://whatsapp" class="uk-width-expand uk-button uk-button-gradient">Get Quote</a>
+                                                                    
                                                     
                                                                     </div>
                                                                 </div>
@@ -775,7 +776,7 @@
                                                         <div class="uk-card uk-panel">
                                                             <div class="uk-panel uk-overflow-hidden uk-radius-large">
                                                                 <canvas width="263" height="394"></canvas>
-                                                                <img src="./assets/images/collections/02.jpg" alt="Artwork" class="uk-cover" data-uk-cover="">
+                                                                <img src="./assets/images/collections/yugi.jpg" alt="Artwork" class="uk-cover" data-uk-cover="">
                                                             </div>
                                                             <h2 class="uk-h3 uk-h2@s uk-position-center-right-out uk-padding-medium-left uk-padding-2xsmall-left@s uk-padding-large-left@m uk-offset-2xlarge-left uk-offset-large-left@m uk-position-z-index uk-text-uppercase uk-text-gray-100 dark:uk-text-gray-10">
                                                                 Yugi
@@ -865,7 +866,7 @@
 
 
             <!-- cta start -->
-            <div class="uni-cta uk-section uk-section-2xlarge@m uk-panel uk-overflow-hidden">
+            <div class="uni-cta uk-section uk-section-2xlarge@m uk-panel uk-overflow-hidden" id="uni_contact">
                 <img class="uk-cover uk-opacity-10" data-uk-cover src="./assets/images/lets_get_rolling.png" alt="showcase">
                 <div class="uk-container">
                     <div class="uk-card uk-flex-center uk-text-center">
@@ -876,14 +877,47 @@
                             <img class="uk-position-bottom-left" width="48" src="./assets/images/objects/seo1.png" alt="Object" style="bottom: 16%; left: -8%">
                             <h2 class="uk-h3 uk-heading-d1@m">Let's get rolling.</h2>
                         
-                            <a href="#uni_connect_wallet" class="uk-button uk-button-medium@m uk-button-large@m uk-button-gradient uk-margin-small-top uk-margin-large-top@m" data-uk-toggle="">
-                                <span>Contact Us</span>
-                            </a>
-
                         </div>
                     </div>
                 </div>
             </div>
+
+
+                <!-- Page header -->
+         
+                <div class="uk-margin-top uk-margin-large-top@m">
+                    <div class="uk-container uk-container-xsmall">
+                        <div class="uk-grid uk-child-width-1-1" data-uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-small uk-card-large@m uk-card-default uk-card-border uk-radius-medium uk-radius-large@m uk-position-z-index dark:uk-background-white-5">
+                                    <form action="?" class="uk-grid uk-grid-xsmall uk-child-width-1-1" data-uk-grid>
+                                        <div class="uk-width-1-2@m">
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input uk-form-medium uk-text-bold" type="text" placeholder="Name">
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-1-2@m">
+                                            <div class="uk-form-controls">
+                                                <input class="uk-input uk-form-medium uk-text-bold" type="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input uk-form-medium uk-text-bold" type="text" placeholder="Subject">
+                                        </div>
+                                        <div class="uk-form-controls">
+                                            <textarea class="uk-textarea uk-padding uk-height-xsmall uk-radius-large uk-text-bold" rows="5" placeholder="Type your message"></textarea>
+                                        </div>
+                                        <div class="uk-form-controls uk-flex-center">
+                                            <button type="submit" class="uk-button uk-button-gradient uk-width-small@m uk-margin-auto">Send message</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                       
+                        </div>
+                    </div>
+                </div>
+            
 
             <!-- cta end -->
 
@@ -916,6 +950,9 @@
                                     </li>
                                     <li>
                                         <a href="https://instagram.com/"><span class="uk-icon uk-icon-medium@m ri-instagram-fill"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://youtube.com/"><span class="uk-icon uk-icon-medium@m ri-youtube-fill"></span></a>
                                     </li>
                                 </ul>
                             </div>

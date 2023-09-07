@@ -449,3 +449,26 @@ $("#uni-audio-play-pause").on("click", function (t) {
       : (document.getElementById("uni-background-audio").pause(),
         (playing = !1));
 });
+
+//for social media 
+
+const express = require('express');
+const app = express();
+
+const links = require('./link.js');
+
+app.get('/whatsapp', (req, res) => {
+  res.redirect(links.whatsapp);
+});
+
+app.get('/instagram', (req, res) => {
+  res.redirect(links.instagram);
+});
+
+app.get('/linkedin', (req, res) => {
+  res.redirect(links.linkedin);
+});
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
