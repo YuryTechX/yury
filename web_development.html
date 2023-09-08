@@ -41,30 +41,7 @@
         <script src="./assets/js/libs/uikit.min.js"></script>
         <script src="./assets/js/uikit-components.js"></script>
     
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5JJP7FY91"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-B5JJP7FY91');
-        </script>
-        <script async type="module">
-            import { getCLS, getFCP, getFID, getLCP, getTTFB } from 'https://cdn.jsdelivr.net/npm/web-vitals@2.1.2/dist/web-vitals.js';
-            function sendToGoogleAnalytics({ name, delta, id }) {
-                gtag('event', name, {
-                    event_category: 'Web Vitals',
-                    event_label: id,
-                    value: Math.round(name === 'CLS' ? delta * 1000 : delta),
-                    non_interaction: true,
-                });
-            }
-            /* CLS FCP FID LCP TTFB */
-            getCLS(sendToGoogleAnalytics);
-            getFCP(sendToGoogleAnalytics);
-            getFID(sendToGoogleAnalytics);
-            getLCP(sendToGoogleAnalytics);
-            getTTFB(sendToGoogleAnalytics);
-        </script>
+    
     </head>
     <body class="uni-body">
     
@@ -198,7 +175,7 @@
                 <div class="uk-container">
                     <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
                         <div class="uk-panel uk-text-center">
-                            <h2 class="uk-h3 uk-h1@m">Web<span class="uk-text-gradient"> Development</span></h2>
+                            <h2 class="uk-h3 uk-h1@m" style="padding-top: 3rem;">Web<span class="uk-text-gradient"> Development</span></h2>
                         </div>
                     </header>
                     <div class="uk-panel uk-margin-medium-top uk-margin-2xlarge-top@m">
