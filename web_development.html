@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Web Development</title>
+        <title>YURY - Web Development</title>
         <link rel="icon" type="image/png" href="./favicon.ico"/>
-        <meta name="description" content="NFT Marketplace Template">
+        <meta name="YURY Webdevelopment" content="Web Development">
         <meta name="theme-color" content="#741ff5">
 
         <!-- preload head styles -->
@@ -67,15 +67,8 @@
         </script>
     </head>
     <body class="uni-body">
+    
 
-        <!-- Dark/Light toggle -->
-        <!-- <div class="darkmode-trigger uk-position-bottom-right uk-position-small uk-position-fixed uk-box-shadow-large uk-radius-circle" data-darkmode-toggle="">
-            <label class="switch">
-                <span class="sr-only">Dark mode toggle</span>
-                <input type="checkbox">
-                <span class="slider"></span>
-            </label>
-        </div> -->
 
         <!-- Menu modal -->
         <div id="uni_mobile_menu" class="uni-mobile-menu uk-offcanvas" data-uk-offcanvas="mode: push; overlay: true; flip: true; selPanel: .uk-offcanvas-bar-panel;">
@@ -110,7 +103,7 @@
         </div>
 
         <!-- Connection mode -->
-        <div id="uni_connect_wallet" class="uk-modal-full" data-uk-modal>
+        <div id="contact_overlay" class="uk-modal-full" data-uk-modal>
             <div class="uk-modal-dialog">
                 <div class="uk-position-top uk-position-z-index-negative" data-uk-height-viewport="">
                     <div class="uk-position-cover uk-background-cover uk-opacity-10 dark:uk-hidden" data-src="./assets/images/gradient-01.png" data-uk-img></div>
@@ -177,24 +170,16 @@
                                         
                                     </ul>
                                     <div class="uk-navbar-item">
-                                        <ul class="uk-subnav uk-subnav-small uk-visible@m">
-                                            <li>
-                                                <a href="https://twitter.com/"><i class="uk-icon uk-icon-medium bx bxl-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="https://discord.com/"><i class="uk-icon uk-icon-medium ri-discord-fill"></i></a>
-                                            </li>
-                                        </ul>
 
                                         <!-- header: call to actions -->
-                                        <a href="#uni_connect_wallet" class="uk-button uk-button-medium@m uk-button-default uk-button-outline uk-margin-left uk-visible@l" data-uk-toggle="">
+                                        <a href="#contact_overlay" class="uk-button uk-button-medium@m uk-button-default uk-button-outline uk-margin-left uk-visible@l" data-uk-toggle="">
                                             <span>Get Quote</span>
                                         </a>
                                     </div>
 
                                     <div class="uk-navbar-item uk-hidden@m">
-                                        <a href="#uni_connect_wallet" class="uk-button uk-button-medium@m uk-button-icon uk-hidden@m uk-margin-small-right" data-uk-toggle="">
-                                            <i class="uk-icon unicon-wallet"></i>
+                                        <a href="#contact_overlay" class="uk-button uk-button-medium@m uk-button-icon uk-hidden@m uk-margin-small-right" data-uk-toggle="">
+                                            <i class="ri-phone-fill"></i>
                                         </a>
                                         <a href="#uni_mobile_menu" data-uk-toggle>
                                             <span class="uk-icon uk-icon-medium material-icons">menu</span>
@@ -209,12 +194,48 @@
 
             <!-- Header end -->
 
+            <div id="uni_process" class="uni-process uk-section uk-section-xlarge@m uk-panel">
+                <div class="uk-container">
+                    <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
+                        <div class="uk-panel uk-text-center">
+                            <h2 class="uk-h3 uk-h1@m">Web<span class="uk-text-gradient"> Development</span></h2>
+                        </div>
+                    </header>
+                    <div class="uk-panel uk-margin-medium-top uk-margin-2xlarge-top@m">
+                        <div class="uk-grid uk-grid-2xlarge uk-grid-3xlarge@m uk-child-width-1-1" data-uk-grid="">
+                            
+                            <div>
+                                <div class="uk-panel">
+                                    <div class="uk-grid uk-grid-3xlarge@m uk-flex-middle uk-child-width-1-2@m" data-uk-grid="">
+                                        <div>
+                                            <div class="uk-panel uk-image-middle uk-overflow-hidden uk-radius uk-radius-large@m" data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 200;">
+                                                <img src="./assets/images/web_development.png" alt="890 Nerko's Collective NFT">
+                                            </div>
+                                        </div>
+                                        <div class="uk-flex-first@m">
+                                            <div class="uk-panel" data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;">
+                                                <h3 class="uk-h3 uk-h2@m">creating impactful Websites </h3>
+                                                <p class="uk-text-large@m uk-margin-medium-top@m">Websites play a vital role in shaping the digital presence of any business. </p>
+                                                <p class="uk-text-large@m">Our expertise lies in creating custom-built websites to cater to a wide range of needs. Utilizing cutting-edge technologies, advanced frameworks, and proven methodologies, we assure solutions that are not only future-ready but also scalable.   </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Stage 1 -->
             <div id="uni_roadmap" class="uni-roadmap uk-section uk-section-large@m uk-padding-3xlarge-bottom@m uk-panel uk-overflow-hidden swiper-parent">
                 <div class="uk-container">
                     <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-text-center uk-child-width-auto@m uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
                         <div class="uk-panel">
-                            <h2 class="uk-h3 uk-h1@m" style="padding-top: 3rem;">Web Development</h2>
+                            <h2 class="uk-h3 uk-h1@m" style="padding-top: 3rem;">How it Works!</h2>
                         </div>
                     </header>
                     <div class="uk-panel uk-width-medium uk-margin-auto uk-margin-medium-top uk-margin-2xlarge-top@m" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 200;">
