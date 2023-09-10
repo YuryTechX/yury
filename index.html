@@ -861,22 +861,23 @@
                         <div class="uk-grid uk-child-width-1-1" data-uk-grid>
                             <div>
                                 <div class="uk-card uk-card-small uk-card-large@m uk-card-default uk-card-border uk-radius-medium uk-radius-large@m uk-position-z-index dark:uk-background-white-5">
-                                    <form action="?" class="uk-grid uk-grid-xsmall uk-child-width-1-1" data-uk-grid>
+                                    <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted){window.location='./submission.html';}"></iframe>
+                                    <form method="post" target="hiddenConfirm" onsubmit="submitted=true" action="https://docs.google.com/forms/d/e/1FAIpQLSf2lEXRBbXXoHc48wSvzvsqES_d3yNqfhTlt_JoYus1nM8emg/formResponse" class="uk-grid uk-grid-xsmall uk-child-width-1-1" data-uk-grid>
                                         <div class="uk-width-1-2@m">
                                             <div class="uk-form-controls">
-                                                <input class="uk-input uk-form-medium uk-text-bold" type="text" placeholder="Name">
+                                                <input name="entry.741043058" class="uk-input uk-form-medium uk-text-bold" type="text" placeholder="Name">
                                             </div>
                                         </div>
                                         <div class="uk-width-1-2@m">
                                             <div class="uk-form-controls">
-                                                <input class="uk-input uk-form-medium uk-text-bold" type="email" placeholder="Email">
+                                                <input name="entry.1311562225" class="uk-input uk-form-medium uk-text-bold" type="email" placeholder="Email">
                                             </div>
                                         </div>
                                         <div class="uk-form-controls">
-                                            <input class="uk-input uk-form-medium uk-text-bold" type="text" placeholder="Subject">
+                                            <input name="entry.630784743" class="uk-input uk-form-medium uk-text-bold" type="text" placeholder="Subject">
                                         </div>
                                         <div class="uk-form-controls">
-                                            <textarea class="uk-textarea uk-padding uk-height-xsmall uk-radius-large uk-text-bold" rows="5" placeholder="Type your message"></textarea>
+                                            <textarea name="entry.681785912" class="uk-textarea uk-padding uk-height-xsmall uk-radius-large uk-text-bold" rows="5" placeholder="Type your message"></textarea>
                                         </div>
                                         <div class="uk-form-controls uk-flex-center">
                                             <button type="submit" class="uk-button uk-button-gradient uk-width-small@m uk-margin-auto">Send message</button>
@@ -961,6 +962,11 @@
         <script defer src="./assets/js/helpers/typed-helper.js"></script>
         <script defer src="./assets/js/helpers/anime-helper.js"></script>
 
+        <!-- ---form script--- -->
+
+        <script type="text/javascript">
+            var submitted=false
+        </script>
       
     </body>
 </html>
