@@ -449,17 +449,3 @@ $("#uni-audio-play-pause").on("click", function (t) {
       : (document.getElementById("uni-background-audio").pause(),
         (playing = !1));
 });
-
-//for social media
-const socialLinks = {
-  linkedin: "https://www.linkedin.com/your-linkedin-profile",
-  whatsapp: "https://wa.me/your-whatsapp-number",
-  instagram: "https://www.instagram.com/your-instagram-handle",
-};
-
-const ulElement = document.querySelector("ul");
-
-ulElement.addEventListener("click", function(event) {
-  const aElement = event.target;
-  window.open(aElement.href, "_blank");
-});
