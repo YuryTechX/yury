@@ -450,25 +450,16 @@ $("#uni-audio-play-pause").on("click", function (t) {
         (playing = !1));
 });
 
-//for social media 
+//for social media
+const socialLinks = {
+  linkedin: "https://www.linkedin.com/your-linkedin-profile",
+  whatsapp: "https://wa.me/your-whatsapp-number",
+  instagram: "https://www.instagram.com/your-instagram-handle",
+};
 
-const express = require('express');
-const app = express();
+const ulElement = document.querySelector("ul");
 
-const links = require('./link.js');
-
-app.get('/whatsapp', (req, res) => {
-  res.redirect(links.whatsapp);
-});
-
-app.get('/instagram', (req, res) => {
-  res.redirect(links.instagram);
-});
-
-app.get('/linkedin', (req, res) => {
-  res.redirect(links.linkedin);
-});
-
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+ulElement.addEventListener("click", function(event) {
+  const aElement = event.target;
+  window.open(aElement.href, "_blank");
 });

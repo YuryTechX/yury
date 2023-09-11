@@ -36,17 +36,14 @@
         <script src="../assets/js/libs/uikit.min.js"></script>
         <script src="../assets/js/uikit-components.js"></script>
     
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
     </head>
     <body class="uni-body">
-
-        <!-- Dark/Light toggle -->
-        <div class="darkmode-trigger uk-position-bottom-right uk-position-small uk-position-fixed uk-box-shadow-large uk-radius-circle" data-darkmode-toggle="">
-            <label class="switch">
-                <span class="sr-only">Dark mode toggle</span>
-                <input type="checkbox">
-                <span class="slider"></span>
-            </label>
-        </div>
 
         <!-- Menu modal -->
         <div id="uni_mobile_menu" class="uni-mobile-menu uk-offcanvas" data-uk-offcanvas="mode: push; overlay: true; flip: true; selPanel: .uk-offcanvas-bar-panel;">
@@ -68,21 +65,11 @@
                         <div class="uk-card uk-card-small">
                             <div class="uk-panel">
                                 <ul class="uk-nav uk-nav-default">
-                                    <li class="uk-nav-header">Homepages</li>
-                                    <li><a href='/html/nerko/main/landing-01'>Landing 01</a></li>
-                                    <li><a href='/html/nerko/main/landing-02'>Landing 02</a></li>
-                                    <li><a href='/html/nerko/main/landing-03'>Landing 03</a></li>
-                                    <li><a href='/html/nerko/main/landing-04'>Landing 04</a></li>
-                                    <li><a href='/html/nerko/main/landing-05'>Landing 05</a></li>
-                                    <li class="uk-nav-header">Inner pages</li>
-                                    <li><a href='/html/nerko/main/base'>Base components</a></li>
-                                    <li><a href='/html/nerko/main/connect-wallet'>Connect wallet</a></li>
-                                    <li><a href='/html/nerko/main/contact'>Contact</a></li>
-                                    <li><a href='/html/nerko/main/404'>404 page</a></li>
-                                    <li><a href="coming-soon.html">Coming soon</a></li>
-                                    <li class="uk-nav-header">Content &amp; Privacy</li>
-                                    <li><a href='/html/nerko/main/terms'>Terms of use</a></li>
-                                    <li><a href="privact.html">Privacy Policy</a></li>
+                                    <li class="uk-nav-header"><a href='./index.html'>Home</a></li>
+                                    <li class="uk-nav-header"><a href='./web_development.html'>Web Development</a></li>
+                                    <li class="uk-nav-header"><a href='./pentest.html'>Web Pentesting</a></li>
+                                    <li class="uk-nav-header"><a href='./flyer.html'>Flyer designing</a></li>
+                                    <li class="uk-nav-header"><a href="./index.html#contact_form">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -91,46 +78,46 @@
             </div>
         </div>
 
-        <!-- Connect wallet modal -->
-        <div id="uni_connect_wallet" class="uk-modal-full" data-uk-modal>
+        <!-- Connection mode -->
+        <div id="contact_overlay" class="uk-modal-full" data-uk-modal>
             <div class="uk-modal-dialog">
                 <div class="uk-position-top uk-position-z-index-negative" data-uk-height-viewport="">
-                    <div class="uk-position-cover uk-background-cover uk-opacity-10 dark:uk-hidden" data-src="../assets/images/gradient-01.png" data-uk-img></div>
-                    <div class="uk-position-cover uk-background-cover uk-opacity-20 uk-hidden dark:uk-visible" data-src="../assets/images/gradient-01.png" data-uk-img></div>
+                    <div class="uk-position-cover uk-background-cover uk-opacity-10 dark:uk-hidden" data-src="./assets/images/gradient-01.png" data-uk-img></div>
+                    <div class="uk-position-cover uk-background-cover uk-opacity-20 uk-hidden dark:uk-visible" data-src="./assets/images/gradient-01.png" data-uk-img></div>
                 </div>
                 <button class="uk-modal-close-full uk-close-large uk-position-small" type="button" data-uk-close></button>
                 <div class="uk-container">
                     <div class="uk-grid uk-flex-center uk-flex-middle uk-child-width-1-2@m uk-section" data-uk-grid data-uk-height-viewport>
                         <div>
                             <div class="uk-panel uk-text-center">
-                                <h2 class="uk-h5 uk-h3@s uk-h2@l uk-margin-remove">Connect your wallet</h2>
+                                <h2 class="uk-h5 uk-h3@s uk-h2@l uk-margin-remove">Contact Us</h2>
                                 <div class="uk-grid uk-grid-xsmall uk-grid-small@m uk-child-width-1-2@m uk-margin-medium-top uk-margin-large-top@m" data-uk-grid="">
                                     <div>
                                         <div class="uk-panel uk-card uk-card-small uk-card-medium@m uk-card-border uk-radius-medium uk-radius-large@m uk-box-shadow-hover-small hover:uk-border-primary">
-                                            <a href="#metamask" class="uk-position-cover"></a>
-                                            <img src="../assets/images/icon-metamask.svg" alt="metamask">
-                                            <h4 class="uk-text-bold uk-h5@m uk-margin-small-top uk-margin-medium-top@m">Metamask</h4>
+                                            <a href="http://whatsapp" class="uk-position-cover"></a>
+                                            <img src="https://img.icons8.com/3d-fluency/94/whatsapp.png" alt="whatsapp" width="94" height="94">
+                                            <h4 class="uk-text-bold uk-h5@m uk-margin-small-top uk-margin-medium-top@m">Whatsapp</h4>
                                         </div>
                                     </div>
                                     <div>
                                         <div class="uk-panel uk-card uk-card-small uk-card-medium@m uk-card-border uk-radius-medium uk-radius-large@m uk-box-shadow-hover-small hover:uk-border-primary">
-                                            <a href="#bitgo" class="uk-position-cover"></a>
-                                            <img src="../assets/images/icon-bitgo.svg" alt="bitgo">
-                                            <h4 class="uk-text-bold uk-h5@m uk-margin-small-top uk-margin-medium-top@m">BitGo</h4>
+                                            <a href="mailto:yurymail.com" class="uk-position-cover"></a>
+                                            <img src="https://img.icons8.com/3d-fluency/94/gmail.png" alt="gmail" width="94" height="94" />
+                                            <h4 class="uk-text-bold uk-h5@m uk-margin-small-top uk-margin-medium-top@m">Gmail</h4>
                                         </div>
                                     </div>
                                     <div>
                                         <div class="uk-panel uk-card uk-card-small uk-card-medium@m uk-card-border uk-radius-medium uk-radius-large@m uk-box-shadow-hover-small hover:uk-border-primary">
-                                            <a href="#trustwallet" class="uk-position-cover"></a>
-                                            <img src="../assets/images/icon-trustwallet.svg" alt="trustwallet">
-                                            <h4 class="uk-text-bold uk-h5@m uk-margin-small-top uk-margin-medium-top@m">Trust Wallet</h4>
+                                            <a href="linkedin" class="uk-position-cover"></a>
+                                            <img  src="https://img.icons8.com/3d-fluency/94/linkedin.png" alt="linkedin" width="94" height="94"/>
+                                            <h4 class="uk-text-bold uk-h5@m uk-margin-small-top uk-margin-medium-top@m">linkedin</h4>
                                         </div>
                                     </div>
                                     <div>
                                         <div class="uk-panel uk-card uk-card-small uk-card-medium@m uk-card-border uk-radius-medium uk-radius-large@m uk-box-shadow-hover-small hover:uk-border-primary">
-                                            <a href="#coinbase" class="uk-position-cover"></a>
-                                            <img src="../assets/images/icon-coinbase.svg" alt="coinbase">
-                                            <h4 class="uk-text-bold uk-h5@m uk-margin-small-top uk-margin-medium-top@m">Coinbase</h4>
+                                            <a href="Instagram" class="uk-position-cover"></a>
+                                            <img src="https://img.icons8.com/3d-fluency/94/instagram-new.png" alt="instagram-new" width="94" height="94"/>
+                                            <h4 class="uk-text-bold uk-h5@m uk-margin-small-top uk-margin-medium-top@m">Instagram</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -145,42 +132,30 @@
         <div class="wrap">
 
             <!-- Header start -->
-            <header class="uni-header">
-                <div class="uni-header-navbar" data-uk-sticky="top: 70; show-on-up: false; animation: uk-animation-slide-top">
+            <header class="uni-header uk-position-top">
+                <div class="uni-header-navbar" data-uk-sticky="top: 70; show-on-up: false; animation: uk-animation-slide-top" data-anime="opacity:[0, 1]; translateY:[-24, 0]; onview: true; delay: 0;">
                     <div class="uk-container">
                         <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
                             <div class="uk-navbar-top">
                                 <div class="uk-navbar-left">
-                                    <a class='uk-logo uk-navbar-item uk-h4 uk-h3@m uk-margin-remove' href='/html/nerko/main/landing-01'> <img class="uk-visible dark:uk-hidden" width="120" src="../assets/images/nerko-light.svg" alt="Nerko" loading="lazy"> <img class="uk-hidden dark:uk-visible" width="120" src="../assets/images/nerko-dark.svg" alt="Nerko" loading="lazy"> </a>
+                                    <a class='uk-logo uk-navbar-item uk-h4 uk-h3@m uk-margin-remove' href='/index.html'> <img class="uk-hidden dark:uk-visible"  src="./assets/images/yury_white.png" alt="YURY" loading="lazy" style="height: 50px; width: 40px;"> </a>
                                 </div>
 
                                 <div class="uk-navbar-right uk-flex-1 uk-flex-right">
                                     <ul class="uk-navbar-nav dark:uk-text-gray-10 uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 80" data-uk-navbar-bound>
-                                        <li><a href="#uni_minting">Minting</a></li>
-                                        <li><a href="#uni_about">About</a></li>
-                                        <li><a href="#uni_collection">Collection</a></li>
-                                        <li><a href="#uni_roadmap">Roadmap</a></li>
-                                        <li><a href="#uni_team">Team</a></li>
+                              
                                     </ul>
                                     <div class="uk-navbar-item">
-                                        <ul class="uk-subnav uk-subnav-small uk-visible@m">
-                                            <li>
-                                                <a href="https://twitter.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="https://discord.com/unistudioco"><i class="uk-icon uk-icon-medium unicon-logo-discord"></i></a>
-                                            </li>
-                                        </ul>
 
                                         <!-- header: call to actions -->
-                                        <a href="#uni_connect_wallet" class="uk-button uk-button-medium@m uk-button-default uk-button-outline uk-margin-left uk-visible@l" data-uk-toggle="">
-                                            <span>Connect wallet</span>
+                                        <a href="#contact_overlay" class="uk-button uk-button-medium@m uk-button-default uk-button-outline uk-margin-left uk-visible@l" data-uk-toggle="">
+                                            <span>Get Quote</span>
                                         </a>
                                     </div>
 
                                     <div class="uk-navbar-item uk-hidden@m">
-                                        <a href="#uni_connect_wallet" class="uk-button uk-button-medium@m uk-button-icon uk-hidden@m uk-margin-small-right" data-uk-toggle="">
-                                            <i class="uk-icon unicon-wallet"></i>
+                                        <a href="#contact_overlay" class="uk-button uk-button-medium@m uk-button-icon uk-hidden@m uk-margin-small-right" data-uk-toggle="">
+                                            <i class="ri-phone-fill"></i>
                                         </a>
                                         <a href="#uni_mobile_menu" data-uk-toggle>
                                             <span class="uk-icon uk-icon-medium material-icons">menu</span>
@@ -196,10 +171,9 @@
             <!-- Header end -->
 
             <div class="uni-error uk-section uk-section-large@m uk-panel uk-overflow-hidden uk-border-top">
-                <div class="uk-container">
+                <div class="uk-container" style="padding-top: 3rem;">
                     <div class="uk-width-2xlarge@m uk-margin-auto uk-text-center">
-                        <img class="dark:uk-hidden" src="../assets/images/404-light.png" alt="Page not found!">
-                        <img class="uk-hidden dark:uk-visible" src="../assets/images/404-dark.png" alt="Page not found!">
+                        <img class="uk-hidden dark:uk-visible" src="./assets/images/404-dark.png" alt="Page not found!">
                     </div>
                 </div>
             </div>
@@ -207,30 +181,29 @@
 
         <!-- Wrapper end -->
 
-        <!-- Footer start -->
-        <footer class="uni-footer uk-section uk-section-xlarge@m uk-border-top">
+        <footer class="uni-footer uk-section uk-section-xlarge@m">
             <div class="uk-container">
                 <div class="uk-panel">
-                    <img class="uk-position-top-left" width="32" src="../assets/images/objects/ethereum-01.png" alt="object" style="top: 32%; left: 16%">
-                    <img class="uk-position-top-right" width="16" src="../assets/images/objects/x.png" alt="object" style="top: 8%; right: 16%">
-                    <img class="uk-position-bottom-right" width="16" src="../assets/images/objects/circle-01.png" alt="object" style="bottom: 24%; right: 40%">
-                    <img class="uk-position-bottom-left" width="24" src="../assets/images/objects/circle-03.png" alt="object" style="bottom: -8%; left: 30%">
+                    <img class="uk-position-top-left" width="32" src="./assets/images/objects/uiux1.png" alt="object" style="top: -10%; left: 16%">
+                    <img class="uk-position-top-right" width="16" src="./assets/images/objects/connect.png" alt="object" style="top: 8%; right: 16%">
+                    <img class="uk-position-bottom-right" width="16" src="./assets/images/objects/circle1.png" alt="object" style="bottom: 24%; right: 40%">
+                    <img class="uk-position-bottom-left" width="24" src="./assets/images/objects/circle3.png" alt="object" style="bottom: -8%; left: 30%">
                     <div class="uk-grid uk-flex-center uk-text-center" data-uk-grid>
                         <div class="uk-width-large@m">
                             <div class="uk-panel">
-                                <a class='uk-logo' href='/html/nerko/main/landing-01'>
-                                    <img width="200" src="../assets/images/nerko.svg" alt="Nerko">
+                                <a class='uk-logo' href='./index.html'>
+                                    <img width="200" src="./assets/images/yury_white.png" style="max-width: 4rem;" alt="YURY">
                                 </a>
-                                <p class="uk-text-xlarge@m uk-margin-medium-top@m">We make it easy to discover, Invest and manage all your NFTs at one place.</p>
+                                <p class="uk-text-xlarge@m uk-margin-medium-top@m">Let's get this show on the road.</br>This is going to be a lot of work, but it'll be worth it.</p>
                                 <ul class="uk-subnav uk-subnav-small uk-flex-center uk-text-gray-40 uk-margin-top uk-margin-medium-top@m">
                                     <li>
-                                        <a href="https://twitter.com/unistudioco"><span class="uk-icon uk-icon-medium@m unicon-logo-twitter"></span></a>
+                                        <a href={links.linkedin}><span class="uk-icon uk-icon-medium@m ri-linkedin-box-fill"></span></a>
                                     </li>
                                     <li>
-                                        <a href="https://discord.com/unistudioco"><span class="uk-icon uk-icon-medium@m unicon-logo-discord"></span></a>
+                                        <a href={links.whatsapp}><span class="uk-icon uk-icon-medium@m ri-whatsapp-fill"></span></a>
                                     </li>
                                     <li>
-                                        <a href="https://instagram.com/unistudioco"><span class="uk-icon uk-icon-medium@m unicon-logo-instagram"></span></a>
+                                        <a href={links.instagram}><span class="uk-icon uk-icon-medium@m ri-instagram-fill"></span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -241,10 +214,10 @@
                         <div class="uk-grid uk-child-width-auto@m uk-flex-center uk-flex-between@m uk-text-center uk-text-left@m" data-uk-grid>
                             <div>
                                 <ul class="uk-subnav uk-subnav-small uk-text-muted uk-flex-center">
-                                    <li><a href='/html/nerko/main/privacy'>Privacy policy</a></li>
-                                    <li><a href='/html/nerko/main/terms'>Terms of use</a></li>
+                                    <li><a href='./privacy.html'>Privacy policy</a></li>
+                                    <li><a href='./terms.html'>Terms of use</a></li>
                                     <li class="uk-margin-small-left">
-                                        <a href="#" data-uk-totop="" data-uk-scroll><i class="uk-icon uk-icon-small unicon-chevron-up"></i></a>
+                                        <a href="#" data-uk-totop="" data-uk-scroll><i class="uk-icon uk-icon-small ri-cloud-fill"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -260,16 +233,16 @@
         <!-- Footer end -->
 
         <!-- include scripts -->
-        <script defer src="../assets/js/libs/jquery.min.js"></script>
-        <script defer src="../assets/js/libs/swiper-bundle.min.js"></script>
-        <script defer src="../assets/js/libs/feather.min.js"></script>
-        <script defer src="../assets/js/libs/typed.min.js"></script>
-        <script defer src="../assets/js/libs/anime.min.js"></script>
-        <script defer src="../assets/js/app.js"></script>
-        <script defer src="../assets/js/helpers/data-attr-helper.js"></script>
-        <script defer src="../assets/js/helpers/swiper-helper.js"></script>
-        <script defer src="../assets/js/helpers/typed-helper.js"></script>
-        <script defer src="../assets/js/helpers/anime-helper.js"></script>
+        <script defer src="./assets/js/libs/jquery.min.js"></script>
+        <script defer src="./assets/js/libs/swiper-bundle.min.js"></script>
+        <script defer src="./assets/js/libs/feather.min.js"></script>
+        <script defer src="./assets/js/libs/typed.min.js"></script>
+        <script defer src="./assets/js/libs/anime.min.js"></script>
+        <script defer src="./assets/js/app.js"></script>
+        <script defer src="./assets/js/helpers/data-attr-helper.js"></script>
+        <script defer src="./assets/js/helpers/swiper-helper.js"></script>
+        <script defer src="./assets/js/helpers/typed-helper.js"></script>
+        <script defer src="./assets/js/helpers/anime-helper.js"></script>
 
 
     </body>
