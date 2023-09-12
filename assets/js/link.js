@@ -13,3 +13,10 @@ document.getElementById('third').href = links.instagram;
 document.getElementById('third').target = "_blank";
 document.getElementById('forth').href = links.gmail;
 document.getElementById('forth').target = "_blank";
+
+document.getElementById('Ffirst').href = links.linkedin;
+document.getElementById('Ffirst').target = "_blank";
+document.getElementById('Fsecond').href = links.whatsapp;
+document.getElementById('Fsecond').target = "_blank";
+document.getElementById('Fthird').href = links.instagram;
+document.getElementById('Fthird').target = "_blank";

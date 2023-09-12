@@ -216,16 +216,19 @@
                                     <img width="200" src="../assets/images/nerko.svg" alt="Nerko">
                                 </a>
                                 <p class="uk-text-xlarge@m uk-margin-medium-top@m">We make it easy to discover, Invest and manage all your NFTs at one place.</p>
-                                <ul class="uk-subnav uk-subnav-small uk-flex-center uk-text-gray-40 uk-margin-top uk-margin-medium-top@m">
+                                
+                                <ul id="ul_links" class="uk-subnav uk-subnav-small uk-flex-center uk-text-gray-40 uk-margin-top uk-margin-medium-top@m">
                                     <li>
-                                        <a href="https://twitter.com/unistudioco"><span class="uk-icon uk-icon-medium@m unicon-logo-twitter"></span></a>
+                                        <a id="Ffirst" href="#" ><span class="uk-icon uk-icon-medium@m ri-linkedin-box-fill"></span></a>
                                     </li>
                                     <li>
-                                        <a href="https://discord.com/unistudioco"><span class="uk-icon uk-icon-medium@m unicon-logo-discord"></span></a>
+                                        <a id="Fsecond" href="#" ><span class="uk-icon uk-icon-medium@m ri-whatsapp-fill"></span></a>
                                     </li>
                                     <li>
-                                        <a href="https://instagram.com/unistudioco"><span class="uk-icon uk-icon-medium@m unicon-logo-instagram"></span></a>
+                                        <a id="Fthird" href="#" ><span class="uk-icon uk-icon-medium@m ri-instagram-fill"></span></a>
                                     </li>
+                                </ul>
+                                
                                 </ul>
                             </div>
                         </div>
@@ -265,19 +268,6 @@
         <script defer src="../assets/js/helpers/typed-helper.js"></script>
         <script defer src="../assets/js/helpers/anime-helper.js"></script>
 
-        <!-- <script defer src="../assets/js/helpers/anime-helper-defined-timelines.js"></script> -->
-        <script>
-            // Schema toggle via URL
-            const queryString = window.location.search;
-            const urlParams = new URLSearchParams(queryString);
-            const getSchema = urlParams.get("schema");
-            if (getSchema === "dark") {
-                document.documentElement.classList.add("uk-dark");
-                localStorage.setItem("darkMode", "1");
-            } else if (getSchema === "light") {
-                document.documentElement.classList.remove("uk-dark");
-                localStorage.setItem("darkMode", "0");
-            }
-        </script>
+ 
     </body>
 </html>
