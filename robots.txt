@@ -1,5 +1,4 @@
 # robots.txt 
 User-agent: *
-Disallow: 
 Disallow: https://yurytechx.in/submission.html
 Sitemap: https://yurytechx.in/sitemap.xml
