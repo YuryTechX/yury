@@ -2,3 +2,4 @@
 User-agent: *
 Disallow: https://yurytechx.in/submission.html
 Sitemap: https://yurytechx.in/sitemap.xml
+Disallow: https://yurytechx.in/index.html
